@@ -6,9 +6,12 @@ GitHub Pages site for JDevsAppStudio. Hosted at `https://jdevsappstudio-github.g
 
 ```
 /
-└── bunku/
-    ├── index.html           ← Bunku landing page
-    └── privacy-policy.html  ← Bunku privacy policy
+├── bunku/
+│   ├── index.html           ← Bunku landing page
+│   └── privacy-policy.html  ← Bunku privacy policy
+└── animepedia/
+    ├── index.html           ← AnimePedia landing page
+    └── privacy-policy.html  ← AnimePedia privacy policy
 ```
 
 Each app gets its own folder. Add `/appname/index.html` for a new app.
@@ -19,6 +22,8 @@ Each app gets its own folder. Add `/appname/index.html` for a new app.
 |---|---|
 | Bunku landing page | `https://jdevsappstudio-github.github.io/bunku/` |
 | Bunku privacy policy | `https://jdevsappstudio-github.github.io/bunku/privacy-policy.html` |
+| AnimePedia landing page | `https://jdevsappstudio-github.github.io/animepedia/` |
+| AnimePedia privacy policy | `https://jdevsappstudio-github.github.io/animepedia/privacy-policy.html` |
 
 ## How to update
 
@@ -35,6 +40,8 @@ GitHub Pages rebuilds automatically — changes go live within a few minutes.
 
 ## Notes
 
-- Privacy policy URL given to Play Console: `https://jdevsappstudio-github.github.io/bunku/privacy-policy.html`
-- If you add ads in future, update the Advertising section in `bunku/privacy-policy.html` and bump the "Last updated" date
-- Play Store link in `bunku/index.html` uses the real package ID (`com.jdevsappstudio.bunku`) — update the full URL once the app is live on Play Store
+- Privacy policy URLs given to Play Console:
+  - Bunku: `https://jdevsappstudio-github.github.io/bunku/privacy-policy.html`
+  - AnimePedia: `https://jdevsappstudio-github.github.io/animepedia/privacy-policy.html`
+- If you add/change ads, billing, or data collection, update the matching privacy-policy.html and bump its "Last updated" date
+- Play Store links use each app's real package ID (`com.jdevsappstudio.bunku`, `com.jdevsappstudio.animepedia`)
