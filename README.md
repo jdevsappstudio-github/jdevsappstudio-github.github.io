@@ -10,8 +10,9 @@ GitHub Pages site for JDevsAppStudio. Hosted at `https://jdevsappstudio-github.g
 │   ├── index.html           ← Bunku landing page
 │   └── privacy-policy.html  ← Bunku privacy policy
 └── animepedia/
-    ├── index.html           ← AnimePedia landing page
-    └── privacy-policy.html  ← AnimePedia privacy policy
+    ├── index.html             ← AnimePedia landing page
+    ├── privacy-policy.html    ← AnimePedia privacy policy
+    └── terms-of-service.html  ← AnimePedia terms of service
 ```
 
 Each app gets its own folder. Add `/appname/index.html` for a new app.
@@ -24,6 +25,7 @@ Each app gets its own folder. Add `/appname/index.html` for a new app.
 | Bunku privacy policy | `https://jdevsappstudio-github.github.io/bunku/privacy-policy.html` |
 | AnimePedia landing page | `https://jdevsappstudio-github.github.io/animepedia/` |
 | AnimePedia privacy policy | `https://jdevsappstudio-github.github.io/animepedia/privacy-policy.html` |
+| AnimePedia terms of service | `https://jdevsappstudio-github.github.io/animepedia/terms-of-service.html` |
 
 ## How to update
 
