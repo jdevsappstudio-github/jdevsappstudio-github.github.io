@@ -1,35 +1,29 @@
 # jdevsappstudio-github.github.io
 
-GitHub Pages site for JDevsAppStudio. Hosted at `https://jdevsappstudio-github.github.io/`.
+Studio hub for JDevsAppStudio. Hosted at `https://jdevsappstudio.com/` (custom domain via the
+`CNAME` file). Each app now has its own dedicated repo + subdomain — see below.
 
 ## Structure
 
 ```
 /
-├── bunku/
-│   ├── index.html           ← Bunku landing page
-│   └── privacy-policy.html  ← Bunku privacy policy
-└── animepedia/
-    ├── index.html             ← AnimePedia landing page
-    ├── privacy-policy.html    ← AnimePedia privacy policy
-    └── terms-of-service.html  ← AnimePedia terms of service
+├── index.html    ← Studio hub (links out to AnimePedia + Bunku)
+├── CNAME         ← jdevsappstudio.com
+├── bunku/        ← LEGACY, see note below
+└── animepedia/   ← LEGACY, see note below
 ```
-
-Each app gets its own folder. Add `/appname/index.html` for a new app.
 
 ## Live URLs
 
 | Page | URL |
 |---|---|
-| Bunku landing page | `https://jdevsappstudio-github.github.io/bunku/` |
-| Bunku privacy policy | `https://jdevsappstudio-github.github.io/bunku/privacy-policy.html` |
-| AnimePedia landing page | `https://jdevsappstudio-github.github.io/animepedia/` |
-| AnimePedia privacy policy | `https://jdevsappstudio-github.github.io/animepedia/privacy-policy.html` |
-| AnimePedia terms of service | `https://jdevsappstudio-github.github.io/animepedia/terms-of-service.html` |
+| Studio hub | `https://jdevsappstudio.com/` |
+| AnimePedia (own repo/domain) | `https://animepedia.jdevsappstudio.com/` — see `AnimePedia-web` repo |
+| Bunku (own repo/domain) | `https://bunku.jdevsappstudio.com/` — see `Bunku-web` repo |
 
 ## How to update
 
-1. Edit the file(s) in the relevant folder
+1. Edit `index.html`
 2. Commit and push to `main`
 
 ```bash
@@ -42,8 +36,12 @@ GitHub Pages rebuilds automatically — changes go live within a few minutes.
 
 ## Notes
 
-- Privacy policy URLs given to Play Console:
-  - Bunku: `https://jdevsappstudio-github.github.io/bunku/privacy-policy.html`
-  - AnimePedia: `https://jdevsappstudio-github.github.io/animepedia/privacy-policy.html`
-- If you add/change ads, billing, or data collection, update the matching privacy-policy.html and bump its "Last updated" date
-- Play Store links use each app's real package ID (`com.jdevsappstudio.bunku`, `com.jdevsappstudio.animepedia`)
+- **`bunku/` and `animepedia/` are legacy, not deleted on purpose.** Both apps moved to their own
+  repos (`AnimePedia-web`, `Bunku-web`) with their own subdomains, because GitHub Pages only
+  supports one custom domain per repo — this repo couldn't serve two different subdomains itself.
+  The old `jdevsappstudio-github.github.io/animepedia/...` and `.../bunku/...` URLs are kept alive
+  here as a fallback (Play Console still points at the old AnimePedia privacy-policy URL until
+  that's updated to the new domain) — don't delete these folders until Play Console's URLs are
+  confirmed updated and re-crawled.
+- A `/blog/` directory could live at the studio level too (cross-app posts), separate from each
+  app's own future `/blog/`.
