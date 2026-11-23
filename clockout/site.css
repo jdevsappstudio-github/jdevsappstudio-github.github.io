@@ -1,0 +1,32 @@
+/* Clock Out site: the game's own look (paper, ink outlines, offset shadows, Chakra Petch and DM Sans). */
+@font-face{font-family:'Chakra Petch';font-weight:700;font-display:swap;src:url(fonts/chakra-petch-700.woff2) format('woff2')}
+@font-face{font-family:'DM Sans';font-weight:400;font-display:swap;src:url(fonts/dm-sans-400.woff2) format('woff2')}
+@font-face{font-family:'DM Sans';font-weight:700;font-display:swap;src:url(fonts/dm-sans-700.woff2) format('woff2')}
+:root{--paper:#e8eef5;--ink:#1b2433;--coral:#ff5a4e;--blue:#3d7bff;--gold:#e9a800;--green:#12a678;--card:#fbfcfe;--mute:#5d6b80;--line:#d2dbe8;--disp:'Chakra Petch',ui-monospace,monospace;--ui:'DM Sans',system-ui,sans-serif;color-scheme:light}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--ui);font-size:17px;line-height:1.6;
+  background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);background-size:48px 48px;background-position:-1px -1px}
+img{max-width:100%;display:block}
+a{color:var(--blue);text-underline-offset:2px}
+h1,h2,h3{font-family:var(--disp);font-weight:700;line-height:1.1;margin:0;letter-spacing:-.01em;text-wrap:balance}
+.wrap{max-width:1040px;margin:0 auto;padding:0 16px}
+
+.top{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:16px 0}
+.brand{display:flex;align-items:center;gap:10px;color:var(--ink);text-decoration:none;font-family:var(--disp);font-weight:700;font-size:20px}
+.brand img{width:36px;height:36px;border:2px solid var(--ink);border-radius:9px;box-shadow:2px 2px 0 var(--ink)}
+.top nav{display:flex;gap:18px;font-weight:700;font-size:15px}
+.top nav a{color:var(--ink);text-decoration:none}
+.top nav a:hover{text-decoration:underline}
+
+.card{background:var(--card);border:2px solid var(--ink);box-shadow:6px 6px 0 var(--ink)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font-family:var(--disp);font-weight:700;font-size:22px;color:#fff;background:var(--green);border:2px solid var(--ink);box-shadow:4px 4px 0 var(--ink);padding:14px 26px;text-decoration:none;transition:transform .08s,box-shadow .08s}
+.btn:hover{transform:translate(-1px,-1px);box-shadow:5px 5px 0 var(--ink)}
+.btn:active{transform:translate(3px,3px);box-shadow:1px 1px 0 var(--ink)}
+.btn svg{width:22px;height:22px;flex:none}
+.btn:focus-visible,.top a:focus-visible{outline:3px solid var(--blue);outline-offset:3px}
+
+.foot{border-top:2px solid var(--ink);background:var(--card);margin-top:72px;padding:24px 0;font-size:14px;color:var(--mute)}
+.foot .wrap{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between}
+.foot nav{display:flex;flex-wrap:wrap;gap:8px 20px}
+.foot a{color:var(--ink);font-weight:700}

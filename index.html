@@ -4,7 +4,7 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>JDevsAppStudio</title>
-<meta name="description" content="JDevsAppStudio — small, focused Android apps. AnimePedia (anime quotes & ringtones) and Bunku (attendance tracker)." />
+<meta name="description" content="JDevsAppStudio — small, focused Android apps. AnimePedia (anime quotes & ringtones), Bunku (attendance tracker) and Clock Out (office survivor game)." />
 <link rel="canonical" href="https://jdevsappstudio.com/" />
 <meta name="theme-color" content="#0a0a10" />
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%23F3F3F6'/%3E%3Ctext x='16' y='22' font-family='Arial,sans-serif' font-size='15' font-weight='800' fill='%230a0a10' text-anchor='middle'%3EJD%3C/text%3E%3C/svg%3E" />
@@ -20,6 +20,8 @@
   --animepedia-2:#34e0c8;
   --bunku:#6c63ff;
   --bunku-2:#a855f7;
+  --clockout:#ff5a4e;
+  --clockout-2:#ffb4a8;
   color-scheme: dark;
 }
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
@@ -53,6 +55,7 @@ nav{
 .nav-link .dot{ width:.45rem; height:.45rem; border-radius:50%; }
 .nav-link.animepedia .dot{ background:var(--animepedia-2); box-shadow:0 0 6px var(--animepedia-2); }
 .nav-link.bunku .dot{ background:var(--bunku-2); box-shadow:0 0 6px var(--bunku-2); }
+.nav-link.clockout .dot{ background:var(--clockout); box-shadow:0 0 6px var(--clockout); }
 .nav-link:hover{ color:var(--text1); }
 @media (max-width:520px){ .nav-link span:not(.dot){ display:none } }
 
@@ -71,8 +74,7 @@ main::before{
 }
 .hero p{ color:var(--text2); font-size:1rem; max-width:32ch; margin:0 auto; }
 
-.apps{ display:grid; grid-template-columns:1fr 1fr; gap:1.25rem; }
-@media (max-width:640px){ .apps{ grid-template-columns:1fr; } }
+.apps{ display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:1.25rem; }
 
 .app-card{
   display:block; text-decoration:none;
@@ -89,6 +91,8 @@ main::before{
 .app-card.animepedia:hover{ border-color:var(--animepedia); }
 .app-card.bunku{ --glow:rgba(108,99,255,.16); }
 .app-card.bunku:hover{ border-color:var(--bunku); }
+.app-card.clockout{ --glow:rgba(255,90,78,.16); }
+.app-card.clockout:hover{ border-color:var(--clockout); }
 
 .app-icon{
   width:3rem; height:3rem; border-radius:1rem; margin-bottom:1.25rem;
@@ -96,12 +100,15 @@ main::before{
 }
 .animepedia .app-icon{ background:linear-gradient(135deg,var(--animepedia),var(--animepedia-2)); color:#0c0c14; }
 .bunku .app-icon{ background:linear-gradient(135deg,var(--bunku),var(--bunku-2)); }
+.clockout .app-icon{ background:var(--clockout); padding:0; overflow:hidden; }
+.clockout .app-icon img{ width:100%; height:100%; }
 
 .app-card h2{ font-size:1.2rem; font-weight:800; color:var(--text1); margin-bottom:.4rem; letter-spacing:-.01em; }
 .app-card p{ font-size:.92rem; color:var(--text2); margin-bottom:1.25rem; min-height:2.8em; }
 .app-card .go{ font-size:.85rem; font-weight:700; display:inline-flex; align-items:center; gap:.4rem; }
 .animepedia .go{ color:var(--animepedia-2); }
 .bunku .go{ color:var(--bunku-2); }
+.clockout .go{ color:var(--clockout-2); }
 
 footer{ border-top:1px solid var(--border); padding:1.75rem; text-align:center; }
 .footer-links{ display:flex; gap:1.5rem; justify-content:center; flex-wrap:wrap; margin-bottom:.6rem; }
@@ -117,6 +124,7 @@ footer p{ color:var(--text3); font-size:.8rem; }
   <div class="nav-links">
     <a class="nav-link animepedia" href="https://animepedia.jdevsappstudio.com" target="_blank" rel="noopener"><span class="dot"></span><span>AnimePedia</span></a>
     <a class="nav-link bunku" href="https://bunku.jdevsappstudio.com" target="_blank" rel="noopener"><span class="dot"></span><span>Bunku</span></a>
+    <a class="nav-link clockout" href="/clockout/"><span class="dot"></span><span>Clock Out</span></a>
   </div>
 </nav>
 
@@ -138,6 +146,12 @@ footer p{ color:var(--text3); font-size:.8rem; }
       <h2>Bunku</h2>
       <p>Offline attendance tracker — know exactly how many classes you can skip and still stay on track.</p>
       <span class="go">bunku.jdevsappstudio.com &rarr;</span>
+    </a>
+    <a class="app-card clockout" href="/clockout/">
+      <div class="app-icon"><img src="/clockout/img/icon.svg" alt=""></div>
+      <h2>Clock Out</h2>
+      <p>Office survivor game: dodge chat pings, beat 14 bosses and make it to the door at 5 PM.</p>
+      <span class="go">jdevsappstudio.com/clockout &rarr;</span>
     </a>
   </div>
 </main>
