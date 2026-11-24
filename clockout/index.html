@@ -3,21 +3,21 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Clock Out: Office Survivor – an office survivor game for Android</title>
-<meta name="description" content="Clock Out is an office survivor game for Android. Dodge chat pings and P0 tickets, beat 14 bosses and climb from Intern to the top. The door opens at 5 PM.">
+<title>Desk Rush: Office Survivor – an offline office survivor game for Android</title>
+<meta name="description" content="Desk Rush is an offline office survivor game for Android: a one-hand roguelike auto-shooter. Dodge chat pings and P0 tickets, beat your bosses and climb from Intern to the top.">
 <link rel="canonical" href="https://jdevsappstudio.com/clockout/">
 <meta name="theme-color" content="#ff5a4e">
 <link rel="icon" href="img/icon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="img/icon-192.png">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="JDevsAppStudio">
-<meta property="og:title" content="Clock Out: Office Survivor">
+<meta property="og:title" content="Desk Rush: Office Survivor">
 <meta property="og:description" content="Dodge pings, beat your bosses and climb the ladder. The door opens at 5 PM. An office survivor game for Android.">
 <meta property="og:url" content="https://jdevsappstudio.com/clockout/">
 <meta property="og:image" content="https://jdevsappstudio.com/clockout/img/share.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Clock Out: Office Survivor. A crowd of chat pings and a boss fight in the office.">
+<meta property="og:image:alt" content="Desk Rush: Office Survivor. A crowd of chat pings and a boss fight in the office.">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preload" href="fonts/chakra-petch-700.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="site.css">
@@ -25,9 +25,10 @@
 {
   "@context": "https://schema.org",
   "@type": ["VideoGame", "MobileApplication"],
-  "name": "Clock Out: Office Survivor",
+  "name": "Desk Rush: Office Survivor",
+  "alternateName": "Clock Out: Office Survivor",
   "url": "https://jdevsappstudio.com/clockout/",
-  "description": "An office survivor game for Android. Dodge chat pings and P0 tickets, beat 14 bosses and climb 7 job titles across 70 stages.",
+  "description": "An offline office survivor game for Android: a one-hand roguelike auto-shooter. Dodge chat pings and P0 tickets, beat your bosses and climb the career ladder.",
   "image": "https://jdevsappstudio.com/clockout/img/share.png",
   "screenshot": [
     "https://jdevsappstudio.com/clockout/img/play.png",
@@ -36,7 +37,7 @@
     "https://jdevsappstudio.com/clockout/img/stages.png",
     "https://jdevsappstudio.com/clockout/img/desk.png"
   ],
-  "genre": ["Action", "Survivor", "Arcade"],
+  "genre": ["Action", "Survivor", "Roguelike", "Arcade"],
   "gamePlatform": "Android",
   "operatingSystem": "Android",
   "applicationCategory": "GameApplication",
@@ -102,7 +103,7 @@
 <body>
 
 <header class="wrap top">
-  <a class="brand" href="./"><img src="img/icon.svg" alt="" width="36" height="36">Clock Out</a>
+  <a class="brand" href="./"><img src="img/icon.svg" alt="" width="36" height="36">Desk Rush</a>
   <nav aria-label="Site">
     <a class="hide-sm" href="#press">Press</a>
     <a href="privacy-policy.html">Privacy</a>
@@ -114,9 +115,9 @@
   <section class="hero">
     <div>
       <span class="kicker">Office survivor · Android</span>
-      <h1>Clock Out<span>Office Survivor</span></h1>
+      <h1>Desk Rush<span>Office Survivor</span></h1>
       <p class="lede">Dodge pings, beat your bosses and climb the ladder. The door opens at 5 PM.</p>
-      <p class="sub">You're a new developer in an office nobody has ever left. Chat pings swarm you, P0 tickets rush you, and the meeting invites keep coming. Keep moving and make it to the door.</p>
+      <p class="sub">You're the new hire in an office nobody has ever left. Chat pings swarm you, P0 tickets rush you, and the meeting invites keep coming. Keep moving and make it to the door.</p>
       <a class="btn" href="https://play.google.com/store/apps/details?id=com.jdevsappstudio.clockout.officesurvivor">
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3.5v17l14-8.5z" fill="#fff" stroke="#1b2433" stroke-width="2" stroke-linejoin="round"/></svg>
         Get it on Google Play
@@ -140,17 +141,17 @@
     <article class="feat">
       <div class="card shot"><img src="img/boss.webp" alt="A boss fight against the Eng Manager, who fires a ring of shots and says 'Any spare bandwidth?'" width="540" height="1148" loading="lazy"></div>
       <div>
-        <span class="tag">14 bosses</span>
+        <span class="tag">Boss fights</span>
         <h2>Survive your bosses</h2>
-        <p>Fourteen bosses stand between you and the exit, each with their own move. Dodge the Scrum Master's standup ring, walk out of a Quick 1:1 with your Eng Manager, and find a safe spot when the CEO announces Layoffs.</p>
+        <p>A ladder of bosses stands between you and the exit, each with their own move. Dodge the Scrum Master's standup ring, walk out of a Quick 1:1 with your Eng Manager, and find a safe spot when the CEO announces Layoffs.</p>
       </div>
     </article>
     <article class="feat">
       <div class="card shot"><img src="img/stages.webp" alt="The stages map: a winding road of stages, with a mid-boss stage, event stages and star ratings." width="540" height="1148" loading="lazy"></div>
       <div>
-        <span class="tag">70 stages</span>
+        <span class="tag">Career</span>
         <h2>Climb the career ladder</h2>
-        <p>Start as an Intern and work your way up through 7 job titles and 70 stages. Earn stars, get promoted, and find out what's waiting at the very top.</p>
+        <p>Start as an Intern and work your way up, title by title. Earn stars, get promoted, and find out what's waiting at the very top.</p>
       </div>
     </article>
     <article class="feat">
@@ -165,7 +166,7 @@
 
   <section class="extras" aria-label="More">
     <div class="card"><h3>Overtime, if you dare</h3><p>Finish enough tasks and the door opens early. Leave now, or stay until 5:00 for overtime pay.</p></div>
-    <div class="card"><h3>Play your way</h3><p>Easy, Medium and Hard. A daily gift, and no energy timer.</p></div>
+    <div class="card"><h3>Play your way</h3><p>Offline, single player. Easy, Medium and Hard. A daily gift, and no energy timer.</p></div>
     <div class="card"><h3>Fair by design</h3><p>Ads only when you choose one, to revive or double your pay. Pro removes them, adds looks only, and never adds power.</p></div>
   </section>
 
@@ -180,12 +181,12 @@
 
   <section class="card press" id="press">
     <h2>Press</h2>
-    <p>Clock Out: Office Survivor is a one-thumb survivor game about the one thing every employee wants: to leave.</p>
+    <p>Desk Rush: Office Survivor (formerly Clock Out) is an offline, one-hand roguelike survivor game about the one thing every employee wants: to leave.</p>
     <dl>
       <dt>Developer</dt><dd>JDevsAppStudio, India</dd>
       <dt>Platform</dt><dd>Android (Google Play)</dd>
       <dt>Price</dt><dd>Free, with optional rewarded ads and a one-time Pro purchase</dd>
-      <dt>Content</dt><dd>7 job titles, 70 stages, 14 bosses</dd>
+      <dt>Content</dt><dd>A career ladder of stages and boss fights, single player, playable offline</dd>
       <dt>Contact</dt><dd><a href="mailto:jdevsappstudio@gmail.com">jdevsappstudio@gmail.com</a></dd>
       <dt>Screenshots</dt>
       <dd><ul class="imgs">
